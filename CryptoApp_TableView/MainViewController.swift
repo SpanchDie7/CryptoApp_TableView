@@ -33,9 +33,16 @@ let cryptoNames = [ "Bitcoin <BTC>", "Ethereum <ETH>", "Ripple <XRP>", "Bitcoin 
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = cryptoNames[indexPath.row]
         cell.imageView?.image = UIImage(named: cryptoNames[indexPath.row ])
-       
+      //  cell.imageView?.layer.cornerRadius = cell.frame.size.height/2
+     //   cell.imageView?.clipsToBounds = true
 
         return cell
+    }
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85
+        
     }
     
 

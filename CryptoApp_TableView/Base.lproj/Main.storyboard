@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Crypto-->
+        <!--CryptoHandBook-->
         <scene sceneID="Mcs-Mp-4ku">
             <objects>
                 <tableViewController id="Jl8-a0-3mN" customClass="MainViewController" customModule="CryptoApp_TableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="Jl8-a0-3mN" id="Tvn-kn-xJ6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Crypto" id="7wB-ay-vNs"/>
+                    <navigationItem key="navigationItem" title="CryptoHandBook" id="7wB-ay-vNs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Qq-Ac-mo1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,6 +43,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zck-Z1-cjG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Jl8-a0-3mN" kind="relationship" relationship="rootViewController" id="az6-BB-bxQ"/>
